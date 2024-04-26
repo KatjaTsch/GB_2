@@ -28,7 +28,8 @@
 
 const liEl = document.querySelectorAll("li");
 for (let i = 0; i < liEl.length; i++) {
-  if (liEl[i] % 2 === 0) {
-    liEl.classList.add("color");
+  if (i % 2 !== 0) {
+    liEl[i].style.backgroundColor = "green";
+    liEl[i].children[0].style.backgroundColor = "green";
   }
 }
