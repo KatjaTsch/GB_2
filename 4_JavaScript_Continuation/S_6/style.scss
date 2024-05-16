@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.play {
+  display: inline-block;
+  background-image: url(img/play.svg);
+  width: 100px;
+  height: 100px;
+}
+
+.pause {
+  display: inline-block;
+  background-image: url(img/pause.svg);
+  width: 100px;
+  height: 100px;
+}
