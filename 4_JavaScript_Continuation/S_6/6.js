@@ -32,7 +32,7 @@ rangeEl.addEventListener("change", function (e) {
 videoEl.addEventListener("timeupdate", (e) => {
   rangeEl.setAttribute(
     "value",
-    Math.round(videoEl.currentTime / videoEl.duration) * 100
+    Math.round((videoEl.currentTime / videoEl.duration) * 100)
   );
 });
 
@@ -41,6 +41,15 @@ volumeEl.setAttribute("type", "range");
 volumeEl.setAttribute("min", "0");
 volumeEl.setAttribute("max", "100");
 volumeEl.setAttribute("value", "0");
+
+videoEl.addEventListener("loadeddata", (event) => {
+  volumeEl.setAttribute("value", videoEl.volume * 100);
+});
+
+volumeEl.addEventListener("change", function (e) {
+  videoEl.value = e.target.value / 100; 
+  console.log(videoEl.value);
+});
 
 containerEl.appendChild(volumeEl);
 containerEl.appendChild(rangeEl);
