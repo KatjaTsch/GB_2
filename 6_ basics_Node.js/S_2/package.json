@@ -1,0 +1,14 @@
+{
+  "name": "s_2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node. /index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  }
+}

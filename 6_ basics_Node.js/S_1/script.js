@@ -18,7 +18,7 @@ res.writeHead(200, {
 "Content-Type": "text/html; charset=UTF-8",
 });
 res.end("<h1>Мой сервер работает!</h1>");
-} else if (res.url === "/about") {
+} else if (reg.url === "/about") {
 res.writeHead(200, {
 "Content-Type": "text/html; charset=UTF-8",
 });
