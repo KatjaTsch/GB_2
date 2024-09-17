@@ -9,29 +9,31 @@
 // 'Content-Type': 'text/html; charset=UTF-8'
 // - Отправьте HTML код с помощью метода res.end() -->
 
+// const http = require("http");
+// const server = http.createServer((req, res) => {
+// console.log("Запрос получен");
+// if (req.url === "/") {
+// res.writeHead(200, {
+// "Content-Type": "text/html; charset=UTF-8",
+// });
+// res.end("<h1>Мой сервер работает!</h1>");
+// } else if (reg.url === "/about") {
+// res.writeHead(200, {
+// "Content-Type": "text/html; charset=UTF-8",
+// });
+// res.end("<h1>About</h1>");
+// } else {
+// res.writeHead(404, {
+// "Content-Type": "text/html; charset=UTF-8",
+// });
+// res.end("Page not found");
+// }
+// });
+
+// const port = 3005;
+// server.listen(port, () => {
+// console.log(`Сервер запущен на порту ${port}`);
+// });
 
 const http = require("http");
-const server = http.createServer((req, res) => {
-console.log("Запрос получен");
-if (req.url === "/") {
-res.writeHead(200, {
-"Content-Type": "text/html; charset=UTF-8",
-});
-res.end("<h1>Мой сервер работает!</h1>");
-} else if (reg.url === "/about") {
-res.writeHead(200, {
-"Content-Type": "text/html; charset=UTF-8",
-});
-res.end("<h1>About</h1>");
-} else {
-res.writeHead(404, {
-"Content-Type": "text/html; charset=UTF-8",
-});
-res.end("Page not found");
-}
-});
-
-const port = 3005;
-server.listen(port, () => {
-console.log(`Сервер запущен на порту ${port}`);
-});
+const server = http.createServer((reg, res) => {});
